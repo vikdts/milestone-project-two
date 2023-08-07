@@ -13,7 +13,7 @@ function computerClick() {
 //compute the result of user and comp input
 const computeResult = (userInput, computerInput) => {
     for (const func of functionsArray) {
-        const result = func(userInput, computerInput);
+        const result = func(computerInput, userInput);
         if (result) {
             return result;
         }
