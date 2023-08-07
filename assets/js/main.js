@@ -54,3 +54,34 @@ playButton.addEventListener("click", function () {
         \n${outcome}`;
     }
 });
+
+//create outcome for win option
+function win(compClick, userClick) {
+    let outcome = false;
+
+    if (userClick == "spock" && compClick == "scissors") {
+        outcome = "You win! Spock smashed scissors.";
+    } else if (userClick == "spock" && compClick == "rock") {
+        outcome = "You win! Spock evaporates rock.";
+    } else if (userClick == "scissors" && compClick == "paper") {
+        outcome = "You win! Scissors cuts paper.";
+    } else if (userClick == "scissors" && compClick == "lizard") {
+        outcome = "You win! Scissors decapitates lizard.";
+    } else if (userClick == "paper" && compClick == "rock") {
+        outcome = "You win! Paper covers rock.";
+    } else if (userClick == "paper" && compClick == "spock") {
+        outcome = "You win! Paper disproves spock.";
+    } else if (userClick == "rock" && compClick == "lizard") {
+        outcome = "You win! Rock crushes lizard.";
+    } else if (userClick == "rock" && compClick == "scissors") {
+        outcome = "You win! Rock crushes scissors.";
+    } else if (userClick == "lizard" && compClick == "spock") {
+        outcome = "You win! Lizard poisons spock.";
+    } else if (userClick == "lizard" && compClick == "paper") {
+        outcome = "You win! Lizard eats paper.";
+    }
+
+    if (outcome) scoresCounter[0] += 1;
+
+    return outcome;
+}
