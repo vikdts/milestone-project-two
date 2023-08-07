@@ -20,6 +20,24 @@ const computeResult = (userInput, computerInput) => {
     }
 };
 
+//accsess scores
+const updateScoreBoard = () => {
+    const userScoreEl = document.querySelectorAll(".scores");
+
+
+//increment the score within the options
+    for (let i = 0; i < userScoreEl.length; i++) {
+        const element = userScoreEl[i].id;
+
+        if (element == "correct") {
+            userScoreEl[i].textContent = scoresCounter[0];
+        } else if (element == "incorrect") {
+            userScoreEl[i].textContent = scoresCounter[1];
+        } else if (element == "draw") {
+            userScoreEl[i].textContent = scoresCounter[2];
+        }
+    }
+};
 
 // Get all elements with class "btn-big" and the "btn-play" button
 const bigButtons = document.querySelectorAll(".btn-big");
