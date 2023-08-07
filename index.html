@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Rock, Paper, Scissors, Lizard, Spock Game.</title>
-</head>
-<body>
-        <div class="game-area">
+  </head>
+  <body>
+    
+    <i class="fas fa-question"></i>
+
+    <h3 class="heading">Choose:</h3>
+
+    <div class="game-area">
       <button data-type="spock" class="btn btn-big btn-spock">
         <div class="spock">
           <i class="fas fa-hand-spock"></i>
@@ -41,21 +46,23 @@
         </div>
       </button>
 
-      <button data-type="submit" id="submit" class="btn btn-play"><p>play</p></button>
+      <button data-type="submit" id="submit" class="btn btn-play">
+        <p>play</p>
+      </button>
     </div>
 
-    <div class="result" id="result">
-        hidden/shown
-    </div>
-    
+    <div class="result" id="result">hidden/shown</div>
+
     <div class="score-area">
-        <p>Incorrect <span id="incorrect" class="scores">0</span></p>
-        <p>Correct <span id="correct" class="scores">0</span></p>
-        <p>Draw <span id="draw" class="scores">0</span></p>
+      <p>Incorrect <span id="incorrect" class="scores">0</span></p>
+      <p>Correct <span id="correct" class="scores">0</span></p>
+      <p>Draw <span id="draw" class="scores">0</span></p>
     </div>
 
-        <script src="https://kit.fontawesome.com/8b99e165b8.js" crossorigin="anonymous"></script>
-            <script src="./assets/js/main.js"></script>
-
-</body>
+    <script
+      src="https://kit.fontawesome.com/8b99e165b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
