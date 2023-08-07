@@ -10,6 +10,15 @@ function computerClick() {
     return buttonsArray[random].getAttribute("data-type");
 }
 
+//compute the result of user and comp input
+const computeResult = (userInput, computerInput) => {
+    for (const func of functionsArray) {
+        const result = func(userInput, computerInput);
+        if (result) {
+            return result;
+        }
+    }
+};
 
 
 // Get all elements with class "btn-big" and the "btn-play" button
