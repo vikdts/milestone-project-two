@@ -115,3 +115,14 @@ function loose(compClick, userClick) {
 
     return outcome;
 }
+
+//Compare arguments for tied option
+function draw(compClick, userClick) {
+    if (compClick == userClick) {
+        scoresCounter[2] += 1;
+
+        return "It's a tie";
+    } else {
+        return false;
+    }
+}
