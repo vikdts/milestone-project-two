@@ -85,3 +85,33 @@ function win(compClick, userClick) {
 
     return outcome;
 }
+
+function loose(compClick, userClick) {
+    let outcome = false;
+
+    if (compClick == "spock" && userClick == "scissors") {
+        outcome = "You loose! Spock smashed scissors.";
+    } else if (compClick == "spock" && userClick == "rock") {
+        outcome = "You loose! Spock evaporates rock.";
+    } else if (compClick == "scissors" && userClick == "paper") {
+        outcome = "You loose! Scissors cuts paper.";
+    } else if (compClick == "scissors" && userClick == "lizard") {
+        outcome = "You loose! Scissors decapitates lizard.";
+    } else if (compClick == "paper" && userClick == "rock") {
+        outcome = "You loose! Paper covers rock.";
+    } else if (compClick == "paper" && userClick == "spock") {
+        outcome = "You loose! Paper disproves spock.";
+    } else if (compClick == "rock" && userClick == "lizard") {
+        outcome = "You loose! Rock crushes lizard.";
+    } else if (compClick == "rock" && userClick == "scissors") {
+        outcome = "You loose! Rock crushes scissors.";
+    } else if (compClick == "lizard" && userClick == "spock") {
+        outcome = "You loose! Lizard poisons spock.";
+    } else if (compClick == "lizard" && userClick == "paper") {
+        outcome = "You loose! Lizard ceats paper.";
+    }
+
+    if (outcome) scoresCounter[1] += 1;
+
+    return outcome;
+}
