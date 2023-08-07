@@ -18,6 +18,11 @@ const playButton = document.querySelector(".btn-play");
 const hiddenDiv = document.getElementById("result");
 
 
+let lastClickedDataType = null;
+
+// Create an array to store the scores
+// The first element is the correct, the second is the incorrect, the third is the number of draws
+const scoresCounter = [0, 0, 0];
 
 
 
@@ -126,3 +131,7 @@ function draw(compClick, userClick) {
         return false;
     }
 }
+
+
+//array of all outcomes
+const functionsArray = [win, loose, draw];
