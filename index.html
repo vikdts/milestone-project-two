@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="game-area">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Rock, Paper, Scissors, Lizard, Spock Game.</title>
+</head>
+<body>
+        <div class="game-area">
       <button data-type="spock" class="btn btn-big btn-spock">
         <div class="spock">
+          <i class="fas fa-hand-spock"></i>
           <p>spock</p>
         </div>
       </button>
       <button data-type="scissors" class="btn btn-big btn-scissors">
         <div class="scissors">
+          <i class="fas fa-hand-scissors fa-rotate-90"></i>
           <p>scissors</p>
         </div>
       </button>
       <button data-type="paper" class="btn btn-big btn-paper">
         <div class="paper">
+          <i class="fa fa-hand-paper-o"></i>
           <p>paper</p>
         </div>
       </button>
       <button data-type="rock" class="btn btn-big btn-rock">
         <div class="rock">
+          <i class="fa fa-hand-rock-o"></i>
           <p>rock</p>
         </div>
       </button>
       <button data-type="lizard" class="btn btn-big btn-lizard">
         <div class="lizard">
+          <i class="fas fa-hand-lizard"></i>
           <p>lizard</p>
         </div>
       </button>
 
-      <button data-type="submit" id="submit" class="btn btn-play">
-        <p>play</p>
-      </button>
+      <button data-type="submit" id="submit" class="btn btn-play"><p>play</p></button>
     </div>
-  </body>
+
+
+        <script src="https://kit.fontawesome.com/8b99e165b8.js" crossorigin="anonymous"></script>
+            <script src="./assets/js/main.js"></script>
+
+</body>
 </html>
