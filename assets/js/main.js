@@ -32,3 +32,25 @@ bigButtons.forEach((bigButton) => {
         }
     });
 });
+
+// Add an event listener to the "btn-play"
+playButton.addEventListener("click", function () {
+    if (lastClickedDataType) {
+        // Save the last clicked data-type to local storage
+        localStorage.setItem("savedDataType", lastClickedDataType);
+
+        // Display the hidden div
+        hiddenDiv.style.display = "block";
+
+        const userInput = lastClickedDataType;
+        const computerInput = computerClick();
+
+        const outcome = computeResult(userInput, computerInput);
+        updateScoreBoard();
+
+        // Get the data from local storage and display it inside the hidden div
+        const savedDataType = localStorage.getItem("savedDataType");
+        hiddenDiv.textContent = `User click: ${savedDataType} , Computer click: ${computerInput}. 
+        \n${outcome}`;
+    }
+});
