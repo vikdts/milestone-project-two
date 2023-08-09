@@ -1,116 +1,140 @@
 body {
-    background-color: #000000;
-    font-family: "Raleway", sans-serif;
-    color: #ffffff;
-    text-align: center;
+  background-color: #000000;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  text-align: center;
 }
 
 .fa-question {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .btn-big:active,
 .btn-big:hover {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 
 .btn-play:active,
 .btn-play:hover {
-    background-color: darkblue;
-    color: white;
+  background-color: darkblue;
+  color: white;
 }
 
 i {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .scores {
-    /* display: inline-block; */
-    display: inline;
-    padding: 25px;
+  /* display: inline-block; */
+  display: inline;
+  padding: 25px;
 }
 
 .score-area p {
-    display: inline;
+  display: inline;
 }
 
 .btn-play {
-    width: 2000px;
-    height: 500px;
-    margin: 25px;
+  width: 2000px;
+  height: 500px;
+  margin: 25px;
 }
 
-
-
 .game-area {
-    display: inline-block;
-    border: 2px #ffffff;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-
+  display: inline-block;
+  border: 2px #ffffff;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  /* background-color: purple; */
 }
 
 .btn-big {
-    position: absolute;
-    left: calc(50% - 25px);
-    top: calc(50% - 25px);
-    height: 100px;
-    width: 100px;
-    border: 2px solid #000000;
-    border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
 
 .btn-play {
-    position: absolute;
+  position: absolute;
 
-    left: calc(50% - 25px);
-    top: calc(50% - 25px);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
 
-    height: 50px;
-    width: 50px;
-    border: 2px solid #000000;
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
 
 .btn-big:nth-child(1) {
-    transform: translateX(150px);
+  transform: translateX(150px);
 }
 
 .btn-big:nth-child(2) {
-    transform: rotate(72deg) translateX(150px);
+  transform: rotate(72deg) translateX(150px);
 }
 
 .btn-big .scissors {
-    transform: rotate(-72deg);
+  transform: rotate(-72deg);
 }
 
 .btn-big:nth-child(3) {
-    transform: rotate(144deg) translateX(150px);
+  transform: rotate(144deg) translateX(150px);
 }
 
 .btn-big .paper {
-    transform: rotate(-144deg);
+  transform: rotate(-144deg);
 }
 
 .btn-big:nth-child(4) {
-    transform: rotate(216deg) translateX(150px);
+  transform: rotate(216deg) translateX(150px);
 }
 
 .btn-big .rock {
-    transform: rotate(-216deg);
+  transform: rotate(-216deg);
 }
 
 .btn-big:nth-child(5) {
-    transform: rotate(288deg) translateX(150px);
+  transform: rotate(288deg) translateX(150px);
 }
 
 .btn-big .lizard {
-    transform: rotate(-288deg);
+  transform: rotate(-288deg);
 }
 
 /* hidden text */
 #result {
-    display: none;
+  display: none;
+}
+
+/* popup button */
+.popup-container {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-button {
+  color: white;
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: #000000;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  width: 250px;
+  text-align: left;
 }
