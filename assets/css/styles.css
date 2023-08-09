@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Kanit:wght@300&family=Lato:wght@300&family=Montserrat:wght@300&display=swap");
+
 body {
     background-color: #000000;
-    font-family: "Raleway", sans-serif;
+    font-family: Lato, "Raleway", sans-serif;
     color: #ffffff;
     text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
 }
 
 .fa-question {
@@ -13,6 +20,7 @@ body {
 .btn-big:hover {
     background-color: green;
     color: white;
+    transition: all 0.5s;
 }
 
 .btn-play:active,
@@ -26,7 +34,6 @@ i {
 }
 
 .scores {
-    /* display: inline-block; */
     display: inline;
     padding: 25px;
 }
@@ -42,14 +49,15 @@ i {
 }
 
 .game-area {
-    display: inline-block;
+    position: relative;
     border: 2px #ffffff;
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    /* background-color: purple; */
+    padding: 25px;
 }
 
+/* buttons */
 .btn-big {
     position: absolute;
     left: calc(50% - 50px);
@@ -62,10 +70,8 @@ i {
 
 .btn-play {
     position: absolute;
-
     left: calc(50% - 50px);
     top: calc(50% - 50px);
-
     height: 50px;
     width: 50px;
     border: 2px solid #000000;
@@ -119,11 +125,13 @@ i {
     display: inline-block;
 }
 
-.popup-button {
+/* reset */
+.popup-button,
+#resetButton {
     color: white;
     background-color: #000000;
     border: none;
-    padding: 10px 20px;
+    margin: 25px;
     cursor: pointer;
 }
 
@@ -139,8 +147,23 @@ i {
     text-align: left;
 }
 
-/* reset */
-#resetButton {
-    background-color: #000000;
-    color: #ffffff;
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 550px) {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
