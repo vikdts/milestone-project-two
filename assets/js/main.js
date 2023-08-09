@@ -177,19 +177,24 @@ popupButton.addEventListener("click", () => {
 const resetButton = document.getElementById("resetButton");
 
 //event listener to reset btn
-resetButton.addEventListener("click", function () {
+// resetButton.addEventListener("click", function () {
+//     scoresCounter[0] = 0;
+//     scoresCounter[1] = 0;
+//     scoresCounter[2] = 0;
+
+//     updateScoreBoard();
+//     result.style.display = 'none';
+// });
+
+function resetGame() {
     scoresCounter[0] = 0;
     scoresCounter[1] = 0;
     scoresCounter[2] = 0;
 
     updateScoreBoard();
-    result.style.display = 'none';
-});
+    hiddenDiv.style.display = 'none';
+}
 
-
-
-
-
-
-
+// Add an event listener to the resetButton
+resetButton.addEventListener("click", resetGame);
 

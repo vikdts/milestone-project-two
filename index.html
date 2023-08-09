@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rock, Paper, Scissors, Lizard, Spock Game."
+    />
+    <meta
+      name="keywords"
+      content="rock, paper, scissors, lizard, spock, game."
+    />
+
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Rock, Paper, Scissors, Lizard, Spock Game.</title>
   </head>
   <body>
-    
     <div class="grid-container">
       <h1>Rock, Paper, Scissors, Lizard, Spock Game.</h1>
 
@@ -22,8 +34,8 @@
           </button>
 
           <div class="popup-content" id="popupContent">
+            <p>RULES</p>
             <ul>
-              RULES
               <li>Scissors cut paper</li>
               <li>Paper covers rock</li>
               <li>Rock crushes lizard</li>
@@ -53,16 +65,17 @@
           </button>
           <button data-type="paper" class="btn btn-big btn-paper">
             <div class="paper">
-              <i class="fa fa-hand-paper-o"></i>
+              <i class="fa-solid fa-hand"></i>
               <p>paper</p>
             </div>
           </button>
           <button data-type="rock" class="btn btn-big btn-rock">
             <div class="rock">
-              <i class="fa fa-hand-rock-o"></i>
+              <i class="fas fa-hand-back-fist"></i>
               <p>rock</p>
             </div>
           </button>
+
           <button data-type="lizard" class="btn btn-big btn-lizard">
             <div class="lizard">
               <i class="fas fa-hand-lizard"></i>
@@ -71,25 +84,27 @@
           </button>
 
           <button data-type="submit" id="submit" class="btn btn-play">
-            <p>play</p>
+            play
           </button>
         </div>
 
-        <button id="resetButton">Reset</button>
-        
+        <button id="resetButton">
+          <i class="fa-solid fa-rotate"></i>
+        </button>
       </div>
 
-                    <div class="score-area">
-                        <p>Incorrect <span id="incorrect" class="scores">0</span></p>
-                        <p>Correct <span id="correct" class="scores">0</span></p>
-                        <p>Draw <span id="draw" class="scores">0</span></p>
-                    </div>
+      <div class="score-area">
+        <p>Incorrect <span id="incorrect" class="scores">0</span></p>
+        <p>Correct <span id="correct" class="scores">0</span></p>
+        <p>Draw <span id="draw" class="scores">0</span></p>
+      </div>
     </div>
 
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/8b99e165b8.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
