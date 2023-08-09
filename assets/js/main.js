@@ -172,3 +172,15 @@ popupButton.addEventListener("click", () => {
   }
   isOpen = !isOpen;
 });
+
+//reset
+const resetButton = document.getElementById("resetButton");
+
+//event listener to reset btn
+resetButton.addEventListener("click", function () {
+    scoresCounter[0] = 0;
+    scoresCounter[1] = 0;
+    scoresCounter[2] = 0;
+
+    updateScoreBoard();
+});
