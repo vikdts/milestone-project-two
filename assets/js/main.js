@@ -20,6 +20,8 @@ const computeResult = (userInput, computerInput) => {
     }
 };
 
+
+
 //accsess scores
 const updateScoreBoard = () => {
     const userScoreEl = document.querySelectorAll(".scores");
@@ -36,7 +38,10 @@ const updateScoreBoard = () => {
             userScoreEl[i].textContent = scoresCounter[2];
         }
     }
+
+
 };
+
 
 // Get all elements with class "btn-big" and the "btn-play" button
 const bigButtons = document.querySelectorAll(".btn-big");
@@ -197,4 +202,6 @@ function resetGame() {
 
 // Add an event listener to the resetButton
 resetButton.addEventListener("click", resetGame);
+
+
 

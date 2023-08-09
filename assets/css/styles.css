@@ -161,9 +161,33 @@ i {
 }
 
 @media (max-width: 550px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+
+
+    .game-area {
+        position: relative;
+        border: 2px #ffffff;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+
     .row {
         display: flex;
         align-items: center;
         flex-direction: column;
+        row-gap: 150px;
+        scale: 0.5;
     }
+
+
+    .score-area>p {
+        font-size: 10px;
+    }
+
 }
