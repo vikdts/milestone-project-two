@@ -21,7 +21,7 @@
 
 ## **Features**
 
-### **Existing Features**       
+### **Existing Features**
 
 #### Initial page
 
@@ -89,13 +89,13 @@
 
 ### **Lighthouse**
 
-- I ran the website through the Lighthouse function on devtools     
+- I ran the website through the Lighthouse function on devtools
 
 ![lighthouse](./assets/imgs/lighthouse.jpg)
 
 ### **Fixed Bugs**
 
-- Reversed arguments in computeResult 
+- Reversed arguments in computeResult
 
 ## **Deployment**
 
