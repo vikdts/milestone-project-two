@@ -22,11 +22,13 @@ const computeResult = (userInput, computerInput) => {
 
 
 
-//accsess scores
-const updateScoreBoard = () => {
+// Update scores and check condition
+function updateScoreBoard() {
     const userScoreEl = document.querySelectorAll(".scores");
 
-    //increment the score within the options
+    let totalScore = scoresCounter[0] + scoresCounter[1] + scoresCounter[2];
+
+    // Increment score 
     for (let i = 0; i < userScoreEl.length; i++) {
         const element = userScoreEl[i].id;
 
@@ -39,9 +41,12 @@ const updateScoreBoard = () => {
         }
     }
 
-
-};
-
+    // Check condition 
+    if (totalScore >= 6) {
+        // reset button
+        resetButton.click();
+    }
+}
 
 // Get all elements with class "btn-big" and the "btn-play" button
 const bigButtons = document.querySelectorAll(".btn-big");
@@ -50,8 +55,7 @@ const hiddenDiv = document.getElementById("result");
 
 let lastClickedDataType = null;
 
-// Create an array to store the scores
-// The first element is the correct, the second is the incorrect, the third is the number of draws
+// store the scores
 const scoresCounter = [0, 0, 0];
 
 // Add event listeners to the "btn-big" buttons
@@ -60,7 +64,7 @@ bigButtons.forEach((bigButton) => {
         // Get data-type attribute of the clicked "btn-big" button
         const dataType = bigButton.getAttribute("data-type");
         if (dataType) {
-            // Save the data-type to a variable to use later when the "btn-play" button is clicked
+            // Save the data-type
             lastClickedDataType = dataType;
         }
     });
@@ -181,16 +185,6 @@ popupButton.addEventListener("click", () => {
 //reset
 const resetButton = document.getElementById("resetButton");
 
-//event listener to reset btn
-// resetButton.addEventListener("click", function () {
-//     scoresCounter[0] = 0;
-//     scoresCounter[1] = 0;
-//     scoresCounter[2] = 0;
-
-//     updateScoreBoard();
-//     result.style.display = 'none';
-// });
-
 function resetGame() {
     scoresCounter[0] = 0;
     scoresCounter[1] = 0;
@@ -202,6 +196,5 @@ function resetGame() {
 
 // Add an event listener to the resetButton
 resetButton.addEventListener("click", resetGame);
-
 
 

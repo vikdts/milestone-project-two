@@ -19,7 +19,7 @@
 
 ![amiresponsive](./assets/imgs/amiresponsive.jpg)
 
-## **FeaHs**
+## **Features**
 
 ### **Existing Features**       
 
@@ -33,6 +33,12 @@
 
 ![heading](./assets/imgs/heading.jpg)
 
+#### Info button
+
+- The button with the icon question mark, is a popup icon button, which onclicked opens the rules of the game
+
+![info-button](./assets/imgs/info-icon.jpg)
+
 #### Game area
 
 - Game area consists of six buttons, five larger ones in a circle and a smaller one in the middle. The large buttons contain an icon that represents a specific hand gesture, and a text with it/'s name underneath
@@ -41,14 +47,9 @@
   - scissors - icon of a hand with index and middle finger oustreched apart
   - lizard - icon of a hand with all fingers touching
   - spock - icon which formed by the Star Trek Vulcan salute, outreched fingers with index and middle together apart of ring and little finger
+  - play - the smaller button with text play on it
 
 ![game-area](./assets/imgs/game-area.jpg)
-
-#### Info button
-
-- The button with the icon question mark, is a popup icon button, which onclicked opens the rules of the game
-
-![info-button](./assets/imgs/info-icon.jpg)
 
 #### Reset button
 
@@ -67,6 +68,10 @@
 - Underneath the heading, after the right combination of one large button clicked and button named play after, shows a paragraph with the user choice input, a random input shuffled by the computer, which is been comparated and returns is it is a draw win or loose and the specific combination of it
 
 ![result](./assets/imgs/result.jpg)
+
+#### End
+
+- The game is limited to five tries,the following click after automatically resets the result.
 
 ## **Testing**
 
@@ -111,10 +116,11 @@
 
 ## **Credits**
 
+- I used [mdn](https://developer.mozilla.org/en-US/) to ensure the syntax of arrow functions and forEach functions
+
 ### **Content**
 
 - The text for the Rules was taken from [rules](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
-- add more tutorials etc
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/search?o=r&m=free)
 
 ### **Wireframes**
