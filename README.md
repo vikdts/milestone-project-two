@@ -1,6 +1,6 @@
 # **Rock, Paper, Scissors, Lizard, Spock Game**
 
-#### Rock, Paper, Scissors, Lizard, Spock is web based game, originally invented by Sam Kass with Karen Bryla. It is based on the classic selection method game rock-paper-scissors, expanding two additional weapons lizard and Spock which isformed by the Star Trek Vulcan salute
+#### Rock, Paper, Scissors, Lizard, Spock is web based game, originally invented by Sam Kass with Karen Bryla. It is based on the classic selection method game rock-paper-scissors, expanding two additional weapons lizard and Spock which is formed by the Star Trek Vulcan salute
 
 #### **Rules:**
 
@@ -17,15 +17,56 @@
 - Spock vaporizes rock
 - Rock breaks scissors
 
-## **Features**
+![amiresponsive](./assets/imgs/amiresponsive.jpg)
 
-### **Existing Features**
+## **FeaHs**
 
-- Item
-  - I
-  - I
-- Item
-- Item
+### **Existing Features**       
+
+#### Initial page
+
+![initial-page](./assets/imgs/page.jpg)
+
+#### Heading
+
+- The heading gives awarenes of the name of the game
+
+![heading](./assets/imgs/heading.jpg)
+
+#### Game area
+
+- Game area consists of six buttons, five larger ones in a circle and a smaller one in the middle. The large buttons contain an icon that represents a specific hand gesture, and a text with it/'s name underneath
+  - rock - icon of a hand in a fist
+  - paper - icon of a hand with outstreched fingers
+  - scissors - icon of a hand with index and middle finger oustreched apart
+  - lizard - icon of a hand with all fingers touching
+  - spock - icon which formed by the Star Trek Vulcan salute, outreched fingers with index and middle together apart of ring and little finger
+
+![game-area](./assets/imgs/game-area.jpg)
+
+#### Info button
+
+- The button with the icon question mark, is a popup icon button, which onclicked opens the rules of the game
+
+![info-button](./assets/imgs/info-icon.jpg)
+
+#### Reset button
+
+- Reset button has and icon of two arrows in a circle, when clicked it clears the score and sets it back to 0
+
+![reser-button](./assets/imgs/reset-icon.jpg)
+
+#### Score area
+
+- Score area has three elements - correct, incorrect and draw, from left to right, next to each one is the current score, which is set to 0 at the beginning of the game and updates, while playing
+
+![score-area](./assets/imgs/score-board.jpg)
+
+#### Result
+
+- Underneath the heading, after the right combination of one large button clicked and button named play after, shows a paragraph with the user choice input, a random input shuffled by the computer, which is been comparated and returns is it is a draw win or loose and the specific combination of it
+
+![result](./assets/imgs/result.jpg)
 
 ## **Testing**
 
@@ -40,6 +81,12 @@
 ### **Unfixed Bugs**
 
 - Element div not allowed as child of element button in this context
+
+### **Lighthouse**
+
+- I ran the website through the Lighthouse function on devtools     
+
+![lighthouse](./assets/imgs/lighthouse.jpg)
 
 ### **Fixed Bugs**
 
